@@ -138,8 +138,8 @@ export const schema: yup.Schema<FormData> = yup
           .number()
           .integer(MSG_INTEGER)
           .required(MSG_REQUIRED)
-          .min(10, MSG_AT_LEAST_TEN)
-          .max(100, MSG_TOO_MANY_RUNS),
+          .min(1, MSG_AT_LEAST_TEN)
+          .max(100001, MSG_TOO_MANY_RUNS),
 
         simulationTimeRange: dateRange().required(MSG_REQUIRED),
       })
